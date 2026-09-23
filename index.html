@@ -80,7 +80,7 @@ main {
 
 .hero {
   position: relative;
-  height: 100svh;
+  height: var(--hero-height, 100svh);
   min-height: 650px;
   max-height: 930px;
   overflow: hidden;
@@ -101,7 +101,11 @@ main {
   display: block;
   object-fit: cover;
   object-position: 58% 50%;
-  transform: none;
+  scale: 1;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+  will-change: auto;
 }
 
 .hero-copy {
@@ -567,6 +571,8 @@ footer small {
 <div class="toast" role="status" hidden></div>
 <script>
 (() => {
+  document.documentElement.style.setProperty('--hero-height', window.innerHeight + 'px');
+
   const buttons = [...document.querySelectorAll('.gallery-grid button')];
   const photos = buttons.map((button) => button.querySelector('img'));
   const lightbox = document.querySelector('.lightbox');

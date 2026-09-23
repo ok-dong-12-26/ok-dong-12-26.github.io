@@ -80,9 +80,8 @@ main {
 
 .hero {
   position: relative;
-  height: var(--hero-height, 100svh);
-  min-height: 650px;
-  max-height: 930px;
+  width: 100%;
+  aspect-ratio: 2 / 3;
   overflow: hidden;
   background: #e8edf0;
 }
@@ -96,6 +95,8 @@ main {
 }
 
 .hero-image {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   display: block;
@@ -152,34 +153,6 @@ main {
   margin: 13px 0 0;
   font-size: 12px;
   letter-spacing: 0.08em;
-}
-
-.scroll-cue {
-  position: absolute;
-  z-index: 1;
-  bottom: 21px;
-  left: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 8px;
-  letter-spacing: 0.2em;
-  text-decoration: none;
-  transform: translateX(-50%);
-}
-
-.scroll-cue i {
-  width: 1px;
-  height: 34px;
-  background: currentColor;
-  animation: scrollLine 1.8s ease-in-out infinite;
-  transform-origin: top;
-}
-
-@keyframes scrollLine {
-  0%, 100% { transform: scaleY(0.4); opacity: 0.45; }
-  50% { transform: scaleY(1); opacity: 1; }
 }
 
 .section {
@@ -557,10 +530,9 @@ footer small {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .scroll-cue i { animation: none; }
   .gallery-grid img { transition: none; }
 }
-</style><meta name="theme-color" content="#f5f2e9"/><title>해동, 선옥 결혼합니다</title><meta name="description" content="2026년 12월 26일 토요일 오후 2시, 아벤티움 서울"/></head><body><div hidden=""><!--$--><!--/$--></div><div class="page-shell"><main><section class="hero" aria-labelledby="hero-title"><img class="hero-image" src="img-3031.jpg" alt="넓은 하늘 아래 나란히 앉은 해동과 선옥" fetchPriority="high"/><div class="hero-copy"><h1 id="hero-title"><span>정해동</span><span>이선옥</span></h1><p class="hero-status">결혼합니다.</p><p class="hero-date">2026년 12월 26일 토요일 오후 2시</p></div><a class="scroll-cue" href="#invitation" aria-label="청첩장 내용 보기"><i aria-hidden="true"></i></a></section><section class="section invitation" id="invitation"><img class="invitation-sheep" src="sheep-v3.png" alt="마주 보는 두 마리 양"/><h2>초대합니다.</h2><p class="invitation-copy">같은 방향을 꿈꾸게 된 저희의 새로운 시작을<br/>함께 축하해주세요.</p><div class="family-lines" aria-label="혼주와 신랑 신부 소개"><p><span>정휘진 · 곽금영</span>의 장남 <strong>해동</strong></p><p><span>이원호 · 정효선</span>의 차녀 <strong>선옥</strong></p></div></section><section class="section venue" aria-labelledby="venue-title"><p class="section-kicker">오시는 길</p><h2 id="venue-title">아벤티움 서울</h2><p class="section-subtitle">서울특별시 중구 청파로 464<br/>브라운스톤서울 3층</p><div class="map-buttons"><a href="https://map.naver.com/p/search/%EC%95%84%EB%B2%A4%ED%8B%B0%EC%9B%80%20%EC%84%9C%EC%9A%B8" target="_blank" rel="noreferrer">네이버 지도</a><a href="https://map.kakao.com/?q=%EC%95%84%EB%B2%A4%ED%8B%B0%EC%9B%80%20%EC%84%9C%EC%9A%B8" target="_blank" rel="noreferrer">카카오맵</a></div><div class="directions"><div><span class="direction-label">지하철</span><p>2·5호선 충정로역 4번 출구 도보 3분<br/>1·4호선 서울역 15번 출구 도보 10분</p></div><div><span class="direction-label">주차</span><p>별관 서소문공원 주차장이 보다 여유롭습니다.<br/>내비게이션에 ‘서소문공원’을 검색해 주세요.</p></div></div></section><section class="gallery-section" aria-label="사진첩"><div class="gallery-grid"><button type="button" aria-label="1번째 사진 크게 보기"><img src="img-3026.jpg" alt="초록 언덕에서 마주 보는 해동과 선옥" loading="lazy" style="object-position:50% 72%"/></button><button type="button" aria-label="2번째 사진 크게 보기"><img src="img-3039.jpg" alt="잔디밭에서 손을 잡고 웃는 해동과 선옥" loading="lazy" style="object-position:50% 66%"/></button><button type="button" aria-label="3번째 사진 크게 보기"><img src="img-3033.jpg" alt="푸른 언덕에서 손을 맞잡은 해동과 선옥" loading="lazy" style="object-position:50% 67%"/></button><button type="button" aria-label="4번째 사진 크게 보기"><img src="img-3041.jpg" alt="잔디밭에 나란히 앉아 꽃을 바라보는 두 사람" loading="lazy" style="object-position:50% 58%"/></button><button type="button" aria-label="5번째 사진 크게 보기"><img src="img-3035.jpg" alt="토끼풀 반지를 낀 두 사람의 손" loading="lazy" style="object-position:50% 50%"/></button><button type="button" aria-label="6번째 사진 크게 보기"><img src="img-2803.jpg" alt="푸른 숲에서 서로를 바라보는 해동과 선옥" loading="lazy" style="object-position:50% 77%"/></button><button type="button" aria-label="7번째 사진 크게 보기"><img src="img-3027.jpg" alt="잔디밭에 앉아 함께 웃는 두 사람" loading="lazy" style="object-position:50% 72%"/></button><button type="button" aria-label="8번째 사진 크게 보기"><img src="img-3031.jpg" alt="넓은 하늘 아래 나란히 앉은 해동과 선옥" loading="lazy" style="object-position:50% 74%"/></button><button type="button" aria-label="9번째 사진 크게 보기"><img src="img-3034.jpg" alt="꽃다발을 들고 잔디에 앉은 해동과 선옥" loading="lazy" style="object-position:50% 67%"/></button></div><p class="photo-credit">@timid_pookie</p></section><section class="section accounts" aria-labelledby="accounts-title"><h2 id="accounts-title">마음 전하실 곳</h2><p class="section-subtitle">참석이 어려우신 분들을 위해<br/>조심스럽게 계좌번호를 안내드립니다.</p><div class="account-groups" id="account-list"><details><summary>신랑 측<span aria-hidden="true"></span></summary><div class="account-list"><div class="account-row"><div><span>아버지</span><strong>정휘진</strong><small>농협 15004052070881</small></div><button type="button" aria-label="정휘진 계좌번호 복사">복사하기</button></div><div class="account-row"><div><span>어머니</span><strong>곽금영</strong><small>농협 798 12 145553</small></div><button type="button" aria-label="곽금영 계좌번호 복사">복사하기</button></div><div class="account-row"><div><span>신랑</span><strong>정해동</strong><small>우리 1002 448 257968</small></div><button type="button" aria-label="정해동 계좌번호 복사">복사하기</button></div></div></details><details><summary>신부 측<span aria-hidden="true"></span></summary><div class="account-list"><div class="account-row"><div><span>아버지</span><strong>이원호</strong><small>하나 115 890091 79607</small></div><button type="button" aria-label="이원호 계좌번호 복사">복사하기</button></div><div class="account-row"><div><span>어머니</span><strong>정효선</strong><small>우리 452 08 051071</small></div><button type="button" aria-label="정효선 계좌번호 복사">복사하기</button></div><div class="account-row"><div><span>신부</span><strong>이선옥</strong><small>우리 1002 857 898953</small></div><button type="button" aria-label="이선옥 계좌번호 복사">복사하기</button></div></div></details></div></section><footer><p>축하해 주셔서 감사합니다.</p><small>2026년 12월 26일</small></footer></main></div><!--$--><!--/$-->
+</style><meta name="theme-color" content="#f5f2e9"/><title>해동, 선옥 결혼합니다.</title><meta name="description" content="2026년 12월 26일 토요일 오후 2시, 아벤티움 서울"/></head><body><div hidden=""><!--$--><!--/$--></div><div class="page-shell"><main><section class="hero" aria-labelledby="hero-title"><img class="hero-image" src="img-3031.jpg" alt="넓은 하늘 아래 나란히 앉은 해동과 선옥" fetchPriority="high"/><div class="hero-copy"><h1 id="hero-title"><span>정해동</span><span>이선옥</span></h1><p class="hero-status">결혼합니다.</p><p class="hero-date">2026년 12월 26일 토요일 오후 2시</p></div></section><section class="section invitation" id="invitation"><img class="invitation-sheep" src="sheep-v3.png" alt="마주 보는 두 마리 양"/><h2>초대합니다.</h2><p class="invitation-copy">같은 방향을 꿈꾸게 된 저희의 새로운 시작을<br/>함께 축하해주세요.</p><div class="family-lines" aria-label="혼주와 신랑 신부 소개"><p><span>정휘진 · 곽금영</span>의 장남 <strong>해동</strong></p><p><span>이원호 · 정효선</span>의 차녀 <strong>선옥</strong></p></div></section><section class="section venue" aria-labelledby="venue-title"><p class="section-kicker">오시는 길</p><h2 id="venue-title">아벤티움 서울</h2><p class="section-subtitle">서울특별시 중구 청파로 464<br/>브라운스톤서울 3층</p><div class="map-buttons"><a href="https://map.naver.com/p/search/%EC%95%84%EB%B2%A4%ED%8B%B0%EC%9B%80%20%EC%84%9C%EC%9A%B8" target="_blank" rel="noreferrer">네이버 지도</a><a href="https://map.kakao.com/?q=%EC%95%84%EB%B2%A4%ED%8B%B0%EC%9B%80%20%EC%84%9C%EC%9A%B8" target="_blank" rel="noreferrer">카카오맵</a></div><div class="directions"><div><span class="direction-label">지하철</span><p>2·5호선 충정로역 4번 출구 도보 3분<br/>1·4호선 서울역 15번 출구 도보 10분</p></div><div><span class="direction-label">주차</span><p>별관 서소문공원 주차장이 보다 여유롭습니다.<br/>내비게이션에 ‘서소문공원’을 검색해 주세요.</p></div></div></section><section class="gallery-section" aria-label="사진첩"><div class="gallery-grid"><button type="button" aria-label="1번째 사진 크게 보기"><img src="img-3026.jpg" alt="초록 언덕에서 마주 보는 해동과 선옥" loading="lazy" style="object-position:50% 72%"/></button><button type="button" aria-label="2번째 사진 크게 보기"><img src="img-3039.jpg" alt="잔디밭에서 손을 잡고 웃는 해동과 선옥" loading="lazy" style="object-position:50% 66%"/></button><button type="button" aria-label="3번째 사진 크게 보기"><img src="img-3033.jpg" alt="푸른 언덕에서 손을 맞잡은 해동과 선옥" loading="lazy" style="object-position:50% 67%"/></button><button type="button" aria-label="4번째 사진 크게 보기"><img src="img-3041.jpg" alt="잔디밭에 나란히 앉아 꽃을 바라보는 두 사람" loading="lazy" style="object-position:50% 58%"/></button><button type="button" aria-label="5번째 사진 크게 보기"><img src="img-3035.jpg" alt="토끼풀 반지를 낀 두 사람의 손" loading="lazy" style="object-position:50% 50%"/></button><button type="button" aria-label="6번째 사진 크게 보기"><img src="img-2803.jpg" alt="푸른 숲에서 서로를 바라보는 해동과 선옥" loading="lazy" style="object-position:50% 77%"/></button><button type="button" aria-label="7번째 사진 크게 보기"><img src="img-3027.jpg" alt="잔디밭에 앉아 함께 웃는 두 사람" loading="lazy" style="object-position:50% 72%"/></button><button type="button" aria-label="8번째 사진 크게 보기"><img src="img-3031.jpg" alt="넓은 하늘 아래 나란히 앉은 해동과 선옥" loading="lazy" style="object-position:50% 74%"/></button><button type="button" aria-label="9번째 사진 크게 보기"><img src="img-3034.jpg" alt="꽃다발을 들고 잔디에 앉은 해동과 선옥" loading="lazy" style="object-position:50% 67%"/></button></div><p class="photo-credit">@timid_pookie</p></section><section class="section accounts" aria-labelledby="accounts-title"><h2 id="accounts-title">마음 전하실 곳</h2><p class="section-subtitle">참석이 어려우신 분들을 위해<br/>조심스럽게 계좌번호를 안내드립니다.</p><div class="account-groups" id="account-list"><details><summary>신랑 측<span aria-hidden="true"></span></summary><div class="account-list"><div class="account-row"><div><span>아버지</span><strong>정휘진</strong><small>농협 15004052070881</small></div><button type="button" aria-label="정휘진 계좌번호 복사">복사하기</button></div><div class="account-row"><div><span>어머니</span><strong>곽금영</strong><small>농협 798 12 145553</small></div><button type="button" aria-label="곽금영 계좌번호 복사">복사하기</button></div><div class="account-row"><div><span>신랑</span><strong>정해동</strong><small>우리 1002 448 257968</small></div><button type="button" aria-label="정해동 계좌번호 복사">복사하기</button></div></div></details><details><summary>신부 측<span aria-hidden="true"></span></summary><div class="account-list"><div class="account-row"><div><span>아버지</span><strong>이원호</strong><small>하나 115 890091 79607</small></div><button type="button" aria-label="이원호 계좌번호 복사">복사하기</button></div><div class="account-row"><div><span>어머니</span><strong>정효선</strong><small>우리 452 08 051071</small></div><button type="button" aria-label="정효선 계좌번호 복사">복사하기</button></div><div class="account-row"><div><span>신부</span><strong>이선옥</strong><small>우리 1002 857 898953</small></div><button type="button" aria-label="이선옥 계좌번호 복사">복사하기</button></div></div></details></div></section><footer><p>축하해 주셔서 감사합니다.</p><small>2026년 12월 26일</small></footer></main></div><!--$--><!--/$-->
 <div class="lightbox" role="dialog" aria-modal="true" aria-label="사진 크게 보기" hidden>
   <button class="lightbox-close" type="button" aria-label="닫기">×</button>
   <button class="lightbox-nav prev" type="button" aria-label="이전 사진">‹</button>
@@ -571,8 +543,6 @@ footer small {
 <div class="toast" role="status" hidden></div>
 <script>
 (() => {
-  document.documentElement.style.setProperty('--hero-height', window.innerHeight + 'px');
-
   const buttons = [...document.querySelectorAll('.gallery-grid button')];
   const photos = buttons.map((button) => button.querySelector('img'));
   const lightbox = document.querySelector('.lightbox');
